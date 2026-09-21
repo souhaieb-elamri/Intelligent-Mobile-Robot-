@@ -1,0 +1,339 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.30.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: souhaieb souhaiebelamri78@gmail.com, ensit, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.30.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.30.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.42.0.0
+ 
+<h2>Project:</h2>
+C:\Users\souha\Music\baraketek\projet robot 5\projet robot..uvprojx
+Project File Date:  05/23/2026
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+motor.c(1): warning: In file included from...
+./motor.h(13): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+motor.c(5): warning: no previous extern declaration for non-static variable 'max_speed' [-Wmissing-variable-declarations]
+const int max_speed = 999;
+          ^
+motor.c(5): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const int max_speed = 999;
+      ^
+motor.c(6): warning: no previous extern declaration for non-static variable 'min_speed' [-Wmissing-variable-declarations]
+const int min_speed = 200;
+          ^
+motor.c(6): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const int min_speed = 200;
+      ^
+motor.c(14): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    TIM3->CCER |= 0b0001000100010001;
+                  ^
+motor.c(25): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        TIM3->CCR1 = speed; TIM3->CCR2 = 0;
+                   ~ ^~~~~
+motor.c(26): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        TIM3->CCR3 = 0;     TIM3->CCR4 = speed;
+                                       ~ ^~~~~
+motor.c(30): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        TIM3->CCR1 = 0;     TIM3->CCR2 = speed;
+                                       ~ ^~~~~
+motor.c(31): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        TIM3->CCR3 = speed; TIM3->CCR4 = 0;
+                   ~ ^~~~~
+motor.c(35): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        TIM3->CCR1 = speed; TIM3->CCR2 = 0;
+                   ~ ^~~~~
+motor.c(41): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+        TIM3->CCR3 = 0;     TIM3->CCR4 = speed;
+                                       ~ ^~~~~
+motor.c(49): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+11 warnings generated.
+compiling motor.c...
+gpio.c(1): warning: In file included from...
+./gpio.h(7): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+gpio.c(7): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOC->MODER |= (0b11 << 0) | (0b11 << 2) | (0b11 << 4);
+                     ^
+gpio.c(7): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOC->MODER |= (0b11 << 0) | (0b11 << 2) | (0b11 << 4);
+                                   ^
+gpio.c(7): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOC->MODER |= (0b11 << 0) | (0b11 << 2) | (0b11 << 4);
+                                                 ^
+gpio.c(10): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOC->MODER |= (0b10 << 12) | (0b10 << 14) | (0b10 << 16) | (0b10 << 18);
+                     ^
+gpio.c(10): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOC->MODER |= (0b10 << 12) | (0b10 << 14) | (0b10 << 16) | (0b10 << 18);
+                                    ^
+gpio.c(10): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOC->MODER |= (0b10 << 12) | (0b10 << 14) | (0b10 << 16) | (0b10 << 18);
+                                                   ^
+gpio.c(10): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOC->MODER |= (0b10 << 12) | (0b10 << 14) | (0b10 << 16) | (0b10 << 18);
+                                                                  ^
+gpio.c(15): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOA->MODER |= (0b10 << 4) | (0b10 << 6);
+                     ^
+gpio.c(15): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOA->MODER |= (0b10 << 4) | (0b10 << 6);
+                                   ^
+gpio.c(19): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOA->MODER  |= (0b10 << 18) | (0b10 << 20);
+                      ^
+gpio.c(19): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOA->MODER  |= (0b10 << 18) | (0b10 << 20);
+                                     ^
+gpio.c(23): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOB->MODER  |= (0b10 << 12) | (0b10 << 14);
+                      ^
+gpio.c(23): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOB->MODER  |= (0b10 << 12) | (0b10 << 14);
+                                     ^
+gpio.c(24): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOB->OTYPER |= (0b1 << 6) | (0b1 << 7);
+                      ^
+gpio.c(24): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOB->OTYPER |= (0b1 << 6) | (0b1 << 7);
+                                   ^
+gpio.c(25): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOB->PUPDR  |= (0b01 << 12) | (0b01 << 14);
+                      ^
+gpio.c(25): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOB->PUPDR  |= (0b01 << 12) | (0b01 << 14);
+                                     ^
+gpio.c(29): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOA->MODER &= ~0b11;
+                     ^
+gpio.c(29): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIOA->MODER &= ~0b11;
+                 ~~ ^~~~~
+gpio.c(30): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOA->PUPDR &= ~0b11;
+                     ^
+gpio.c(30): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    GPIOA->PUPDR &= ~0b11;
+                 ~~ ^~~~~
+gpio.c(31): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    GPIOA->PUPDR |= (0b10 << 0);
+                     ^
+gpio.c(32): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+24 warnings generated.
+compiling gpio.c...
+assembling startup_stm32f407xx.s...
+delay.c(2): warning: In file included from...
+./delay.h(12): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+delay.c(6): warning: no previous prototype for function 'SysTick_Handler' [-Wmissing-prototypes]
+void SysTick_Handler(void) {
+     ^
+delay.c(6): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void SysTick_Handler(void) {
+^
+static 
+delay.c(22): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+3 warnings generated.
+compiling delay.c...
+i2c.c(1): warning: In file included from...
+./i2c.h(11): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+i2c.c(4): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    RCC->APB1ENR |= (0b1 << 21);
+                     ^
+i2c.c(5): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    I2C1->CR1 |= (0b1 << 15);   // SWRST
+                  ^
+i2c.c(6): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    I2C1->CR1 &= ~(0b1 << 15);  // Clear SWRST
+                   ^
+i2c.c(6): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    I2C1->CR1 &= ~(0b1 << 15);  // Clear SWRST
+              ~~ ^~~~~~~~~~~~
+i2c.c(10): warning: binary integer literals are a GNU extension [-Wgnu-binary-literal]
+    I2C1->CR1 |= 0b1;           // PE enable
+                 ^
+i2c.c(69): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    I2C1->CR1 &= ~(1 << 10);             // ACK = 0
+              ~~ ^~~~~~~~~~
+i2c.c(81): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+8 warnings generated.
+compiling i2c.c...
+compiling system_stm32f4xx.c...
+main.c(2): warning: In file included from...
+./gpio.h(7): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+main.c(3): warning: In file included from...
+./motor.h(13): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+main.c(4): warning: In file included from...
+./adc.h(15): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+main.c(5): warning: In file included from...
+./usart.h(29): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+main.c(6): warning: In file included from...
+./exti.h(11): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+main.c(7): warning: In file included from...
+./esp8266.h(13): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+main.c(8): warning: In file included from...
+./i2c.h(11): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+main.c(57): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+8 warnings generated.
+compiling main.c...
+exti.c(1): warning: In file included from...
+./exti.h(11): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+exti.c(2): warning: In file included from...
+./motor.h(13): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+exti.c(16): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+            TIM3->CR1 &= ~1;  
+                      ~~ ^~
+exti.c(22): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+            TIM3->CCR1 = speed; TIM3->CCR2 = 0;
+                       ~ ^~~~~
+exti.c(23): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+            TIM3->CCR3 = 0;     TIM3->CCR4 = speed;
+                                           ~ ^~~~~
+exti.c(28): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+6 warnings generated.
+compiling exti.c...
+adc.c(1): warning: In file included from...
+./adc.h(15): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+adc.c(18): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    DMA2_Stream0->CR &= ~1;
+                     ~~ ^~
+adc.c(47): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+        TIM2->SR  &= ~1;
+                  ~~ ^~
+adc.c(58): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+4 warnings generated.
+compiling adc.c...
+esp8266.c(3): warning: In file included from...
+./esp8266.h(13): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+esp8266.c(4): warning: In file included from...
+./usart.h(29): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+esp8266.c(35): warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+    int len = strlen(http);
+        ~~~   ^~~~~~~~~~~~
+esp8266.c(58): warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+    int json_len = strlen(json_payload);
+        ~~~~~~~~   ^~~~~~~~~~~~~~~~~~~~
+esp8266.c(74): warning: implicit conversion changes signedness: 'unsigned int' to 'int' [-Wsign-conversion]
+    int req_len = strlen(post_req);
+        ~~~~~~~   ^~~~~~~~~~~~~~~~
+esp8266.c(85): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+6 warnings generated.
+compiling esp8266.c...
+usart.c(1): warning: In file included from...
+./usart.h(29): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+usart.c(2): warning: In file included from...
+./motor.h(13): warning: no newline at end of file [-Wnewline-eof]
+#endif
+      ^
+usart.c(6): warning: no previous extern declaration for non-static variable 'i' [-Wmissing-variable-declarations]
+int  i = 0;
+     ^
+usart.c(6): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+int  i = 0;
+^
+usart.c(152): warning: no newline at end of file [-Wnewline-eof]
+}
+ ^
+4 warnings generated.
+compiling usart.c...
+linking...
+Program Size: Code=3950 RO-data=694 RW-data=4 ZI-data=2016  
+".\Objects\projetrobot.axf" - 0 Error(s), 74 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\souha\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\souha\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
