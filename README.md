@@ -39,7 +39,6 @@ ADC channels (CH10, CH11, CH12) and a temperature field are sent to a ThingSpeak
 3. Pair the Bluetooth module with your phone and send commands `[list your commands: F, B, L, R, S ...]`.
 4. Enter your WiFi name and your ThingSpeak API key in the source code `[file and line]`, then check your channel.
 
-> **Do not publish your real WiFi password or ThingSpeak API key.** Use placeholders such as `YOUR_WIFI_SSID` and `YOUR_API_KEY`.
 
 ## Author
 
